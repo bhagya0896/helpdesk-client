@@ -40,7 +40,7 @@ function Tickets ({logout})
 
 useEffect(()=>{
   handleTickets();
-},[])
+},[token])
 
     return(
 <>
