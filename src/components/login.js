@@ -32,7 +32,7 @@ import axios from 'axios'
         {
             setcustomMessage(" ")
             return axios
-            .post(`http://localhost:5000/user/login`,{email,password})
+            .post(` https://helpdeskticket-server.herokuapp.com/user/login`,{email,password})
          
             .then((res)=>{let data = res.data;
                 let token = data.token;
@@ -65,7 +65,7 @@ import axios from 'axios'
       }
    else{
        setcustomMessage("");
-       return axios.post('http://localhost:5000/user/forgetpassword', {
+       return axios.post(' https://helpdeskticket-server.herokuapp.com/user/forgetpassword', {
         email
         })
      
