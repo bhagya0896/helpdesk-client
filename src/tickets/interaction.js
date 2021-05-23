@@ -5,7 +5,7 @@
  //getTickets
 export const fetchTickets =(token)=>{
     return axios
-    .get(`${BASE_URL}/tickets`,{
+    .get(`https://helpdeskticket-server.herokuapp.com/user/tickets`,{
         headers:{
             "Content-Type": "application/json",
             'auth-token':token
