@@ -17,7 +17,7 @@ const handleSubmit = () =>
     setMessage("")
     if(token)
     {
-        axios.get('http://localhost:5000/user/activate-user', {
+        axios.get(' https://helpdeskticket-server.herokuapp.com/user/activate-user', {
             params: {
                 token
             }
