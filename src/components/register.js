@@ -44,7 +44,7 @@ function Register ()
         else{
             setcustomMessage("")
             return axios
-            .post(`http://localhost:5000/user/register`,{firstname,lastname,email,password})
+            .post(` https://helpdeskticket-server.herokuapp.com/user/register`,{firstname,lastname,email,password})
             .then((res)=>
             {
                 let data = res.data;
