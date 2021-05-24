@@ -42,7 +42,7 @@ import axios from 'axios'
             {  
               
                 handleLogin(user,token);
-                history.push('https://helpdeskticket-client.herokuapp.com/user/tickets');   
+                history.push('/user/tickets');   
             }
         })
         .catch((error)=>(error.response.data));
