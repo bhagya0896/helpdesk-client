@@ -63,11 +63,13 @@ const handleLogin = (usr,token)=>{
         <Route exact path="/">
         <Navigation/>
           <Login handleLogin={handleLogin}/>
+            <Footer/>
         </Route>
 
         <Route exact path="/register">
         <Navigation/>
           <Register />
+          <Footer/>
         </Route>
 
         <Route exact path="/activate-user/:token">
