@@ -8,7 +8,7 @@ export const fetchTickets =(token)=>{
     .get(`${BASE_URL}/user/tickets`,{
         headers:{
             "Content-Type": "application/json",
-            'auth-token':token
+            
         }
     })
     .then((res)=>res.data)
