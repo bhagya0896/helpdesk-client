@@ -9,6 +9,7 @@ import Contactus from './components/contactus';
 import Login from './components/login';
 import Register from './components/register';
 import Navigation from './components/navbar';
+import Footer from './components/footer';
 import Activate from './components/activate';
 import Password from './components/password';
 import Tickets from './tickets/tickets';
@@ -82,6 +83,7 @@ const handleLogin = (usr,token)=>{
         </Route>
 
       </Switch>
+       <Footer/>
       </Router>
       </CredentialsContext.Provider>
     </>
