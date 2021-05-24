@@ -1,11 +1,11 @@
  import axios from 'axios';
 
- const BASE_URL = ' https://helpdeskticket-server.herokuapp.com/user';
+ const BASE_URL = ' https://helpdeskticket-server.herokuapp.com';
 
  //getTickets
 export const fetchTickets =(token)=>{
     return axios
-    .get(`${BASE_URL}/tickets`,{
+    .get(`${BASE_URL}/user/tickets`,{
         headers:{
             "Content-Type": "application/json",
             'auth-token':token
@@ -18,7 +18,7 @@ export const fetchTickets =(token)=>{
 //addTickets
 export const addTicket=(token,subject,department,priority)=>{
     return axios
-    .post(`${BASE_URL}/add-ticket`,
+    .post(`${BASE_URL}/user/add-ticket`,
     {subject,department,priority},
     {
         headers:{
@@ -34,7 +34,7 @@ export const addTicket=(token,subject,department,priority)=>{
 //addContactusform
 export const addContactForm=(token,firstname,lastname,message)=>{
     return axios
-    .post(`${BASE_URL}/contactus`,
+    .post(`${BASE_URL}/user/contactus`,
     {firstname,lastname,message},
     {
         headers:{
