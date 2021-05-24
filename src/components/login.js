@@ -51,6 +51,8 @@ import axios from 'axios'
     }
   const  handleForgotpassword = () =>
   {
+      setMessage("");
+       setcustomMessage("");
       setpass(true);
   }
 
