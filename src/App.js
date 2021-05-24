@@ -83,7 +83,7 @@ const handleLogin = (usr,token)=>{
         </Route>
 
       </Switch>
-       <Footer/>
+      
       </Router>
       </CredentialsContext.Provider>
     </>
