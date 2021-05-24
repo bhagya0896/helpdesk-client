@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
-import {useParams, useHistory,Redirect} from 'react-router-dom';
+import {useParams, useHistory} from 'react-router-dom';
 import axios from 'axios';
-import {handleErrors} from './login'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Col, Row,Button} from 'react-bootstrap';
 import '../App.css';
@@ -10,14 +10,14 @@ function Activate (){
     const history = useHistory();
     const [message,setMessage]=useState("");
     const {token} = useParams();
-    const [error, setError] = useState("");
+
   
 const handleSubmit = () =>
 {
     setMessage("")
     if(token)
     {
-        axios.get(' https://helpdeskticket-server.herokuapp.com/user/activate-user', {
+       return axios.get(' https://helpdeskticket-server.herokuapp.com/user/activate-user', {
             params: {
                 token
             }
